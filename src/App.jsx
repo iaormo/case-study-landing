@@ -560,12 +560,6 @@ function App() {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white shadow-lg" onClick={handleContactClick}>
-                Get Your FREE Revenue Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -588,12 +582,6 @@ function App() {
               Your competitors are already using unified systems like this. Don't get left behind.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-slate-900 hover:bg-gray-100 shadow-lg" onClick={handleContactClick}>
-                Get Your FREE Revenue Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
             
             <div className="mt-8 flex items-center justify-center space-x-6 text-sm opacity-75">
               <div className="flex items-center space-x-2">
