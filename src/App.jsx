@@ -71,15 +71,9 @@ function App() {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center"
-            initial="initial"
             animate="animate"
             variants={staggerChildren}
           >
-            <motion.div variants={fadeInUp}>
-              <Badge className="mb-6 bg-pink-100 text-pink-700 hover:bg-pink-200 border-pink-300">
-                Technical Case Study
               </Badge>
             </motion.div>
             
@@ -99,14 +93,8 @@ function App() {
               From 24-hour response times to 2-minute responses. From 12% to 340% conversion rates.
             </motion.p>
             
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-              variants={fadeInUp}
             >
               <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white shadow-lg" onClick={handleContactClick}>
-                Get Your FREE Revenue Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </motion.div>
           </motion.div>
         </div>
@@ -118,9 +106,6 @@ function App() {
       {/* Results Overview */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-4 gap-8"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerChildren}
@@ -131,9 +116,6 @@ function App() {
               { icon: TrendingUp, value: "340%", label: "Conversion Rate", color: "text-blue-600", detail: "Industry avg: 12%" },
               { icon: Users, value: "89%", label: "Customer Retention", color: "text-purple-600", detail: "Up from 22%" }
             ].map((stat, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
                     <stat.icon className={`h-12 w-12 mx-auto mb-4 ${stat.color}`} />
                     <div className={`text-3xl font-bold mb-2 ${stat.color}`}>{stat.value}</div>
                     <div className="text-slate-600 font-semibold mb-1">{stat.label}</div>
@@ -150,9 +132,6 @@ function App() {
       <section className="py-20 bg-red-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial="initial"
-              whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
             >
@@ -197,9 +176,6 @@ function App() {
               </div>
             </motion.div>
             
-            <motion.div
-              initial="initial"
-              whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
               className="relative"
@@ -217,9 +193,6 @@ function App() {
       {/* Technical Solution Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center mb-16"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
@@ -234,9 +207,6 @@ function App() {
           </motion.div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial="initial"
-              whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
               className="order-2 lg:order-1 relative"
@@ -251,9 +221,6 @@ function App() {
               </div>
             </motion.div>
             
-            <motion.div
-              initial="initial"
-              whileInView="animate"
               viewport={{ once: true }}
               variants={fadeInUp}
               className="order-1 lg:order-2"
@@ -310,9 +277,6 @@ function App() {
       {/* Technical Results Section */}
       <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center mb-16"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
@@ -361,9 +325,6 @@ function App() {
                 improvement: "4x improvement"
               }
             ].map((stat, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Card className="text-center p-6 hover:shadow-lg transition-shadow border-green-200 bg-white">
-                  <CardContent className="pt-6">
                     <stat.icon className={`h-12 w-12 mx-auto mb-4 ${stat.color}`} />
                     <div className={`text-3xl font-bold mb-2 ${stat.color}`}>{stat.value}</div>
                     <div className="text-slate-800 font-semibold mb-2">{stat.label}</div>
@@ -376,9 +337,6 @@ function App() {
           </div>
 
           {/* Technical Implementation Timeline */}
-          <motion.div 
-            className="bg-white p-8 rounded-lg shadow-lg"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
@@ -414,9 +372,6 @@ function App() {
       {/* Video Testimonial Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-6xl mx-auto"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
@@ -432,9 +387,6 @@ function App() {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Video Placeholder */}
-              <motion.div
-                initial="initial"
-                whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeInUp}
                 className="relative"
@@ -466,9 +418,6 @@ function App() {
               </motion.div>
               
               {/* Testimonial Text */}
-              <motion.div
-                initial="initial"
-                whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
@@ -497,9 +446,6 @@ function App() {
       {/* Technical Urgency Section */}
       <section className="py-20 bg-red-50">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
@@ -562,9 +508,6 @@ function App() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white shadow-lg" onClick={handleContactClick}>
-                Get Your FREE Revenue Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
           </motion.div>
         </div>
@@ -573,9 +516,6 @@ function App() {
       {/* Footer CTA */}
       <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
         <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center"
-            initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
@@ -590,9 +530,6 @@ function App() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-slate-900 hover:bg-gray-100 shadow-lg" onClick={handleContactClick}>
-                Get Your FREE Revenue Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
             
             <div className="mt-8 flex items-center justify-center space-x-6 text-sm opacity-75">
